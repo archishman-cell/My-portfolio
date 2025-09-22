@@ -1,4 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -9,22 +10,19 @@ import UnifiedBackground from "./components/UnifiedBackground";
 
 export default function App() {
   return (
-    
-    <>
+    <Router>
+      <>
         <UnifiedBackground />
-
-      <div className= "text-white">
-      
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-        
-      
-      </div>
+        <Navbar />
+        <div className="text-white">
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </div>
       </>
-  
+    </Router>
   );
 }

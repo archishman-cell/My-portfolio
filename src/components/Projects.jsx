@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 
 const projects = [
   { 
+    title: "VibeAI", 
+    desc: "An intelligent AI chatbot built with React and Vite, powered by Google's Gemini API. Features real-time conversations, smart responses, and a modern user interface.", 
+    link: "https://vibe-ai-silk.vercel.app/",
+    tech: "React, Vite, Gemini API, Tailwind CSS",
+    icon: "🤖"
+  },
+  { 
     title: "Movie Finder App", 
     desc: "A React-based movie discovery app using OMDB API with search functionality, movie details, and responsive design", 
     link: "https://movie-finder-xi-five.vercel.app/",

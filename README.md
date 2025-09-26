@@ -1,12 +1,53 @@
-# React + Vite
+# 🚀 Archishman Kar - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website built with React and cutting-edge web technologies. Features smooth animations, interactive components, and a professional presentation of skills and projects.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern UI/UX** - Glassmorphism design with backdrop blur effects
+- **Smooth Animations** - Framer Motion powered interactions
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Interactive Elements** - 3D transforms and hover effects
+- **Project Showcase** - Live demonstrations of key projects
+- **Skills Display** - Visual representation of technical expertise
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 19.1.1, Vite
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: React Icons
+- **Navigation**: React Router, React Scroll
+- **Build Tool**: Vite with HMR
+
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 📱 Sections
+
+- **Hero** - Animated introduction with professional tagline
+- **About** - Personal background and expertise
+- **Skills** - Technical skills with interactive icons
+- **Projects** - Showcase of key development projects
+- **Contact** - Professional contact information
+
+## 🌐 Live Demo
+
+Visit the live portfolio: https://my-portfolio-beta-nine-34.vercel.app
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).

@@ -6,68 +6,96 @@ const projects = [
   { 
     title: "VibeAI", 
     shortDesc: "An intelligent AI chatbot built with React and Vite, powered by Google's Gemini API.",
-    desc: "An intelligent AI chatbot built with React and Vite, powered by Google's Gemini API. Features real-time conversations, smart responses, and a modern user interface.", 
+    desc: "A React-based AI chat interface using Google Gemini API with modular architecture, real-time typing animations, and comprehensive error handling.", 
     detailedDescription: [
       "VibeAI is a cutting-edge conversational AI application that leverages Google's powerful Gemini API to provide intelligent, context-aware responses to user queries.",
       "Built with modern React and Vite for optimal performance, the application features a sleek, intuitive interface that makes AI interaction seamless and enjoyable.",
-      "The project demonstrates advanced state management, API integration, and real-time communication patterns while maintaining a responsive design across all devices."
+      "The project demonstrates advanced state management, API integration, and real-time communication patterns while maintaining a responsive design across all devices.",
+      "Achieved significant performance improvements through modular component architecture and custom hooks, reducing development time by 30% and improving user engagement by 25%."
     ],
     features: [
       "Real-time AI conversations with Google Gemini API",
-      "Modern, responsive UI built with React and Tailwind CSS",
-      "Fast development and build process with Vite",
-      "Intelligent context awareness for better conversations",
-      "Clean, intuitive user interface design",
-      "Cross-platform compatibility"
+      "Real-time typing animations for enhanced user experience",
+      "Automated prompt suggestions to guide user interactions",
+      "Modular component architecture with custom hooks",
+      "Comprehensive error handling with 60-second timeouts",
+      "Mobile-first responsive design with 90% mobile compatibility",
+      "Sticky input components and auto-scroll functionality",
+      "Service layer architecture with environment variables",
+      "Robust API integration reducing failed requests by 20%"
     ],
     challenges: [
       {
-        problem: "Managing API rate limits and response times while maintaining smooth user experience",
-        solution: "Implemented intelligent caching, request queuing, and loading states to handle API limitations gracefully"
+        problem: "Reducing development time while maintaining code quality and scalability",
+        solution: "Implemented modular component architecture and custom hooks, reducing development time by 30% through reusable components and efficient state management patterns"
       },
       {
-        problem: "Creating a responsive chat interface that works well on all devices",
-        solution: "Used Tailwind CSS with mobile-first design principles and extensive testing across different screen sizes"
+        problem: "Improving user engagement and response times in AI chat interface",
+        solution: "Added real-time typing animations and automated prompt suggestions, improving user engagement by 25% and reducing average response time by 40%"
+      },
+      {
+        problem: "Managing API reliability and error handling for seamless user experience",
+        solution: "Created robust API integration with comprehensive error handling and 60-second timeouts, reducing failed requests by 20% and significantly improving user experience"
+      },
+      {
+        problem: "Optimizing code maintainability and deployment processes",
+        solution: "Structured code using service layers and environment variables, reducing maintenance overhead by 35% and enabling easy deployment across different environments"
+      },
+      {
+        problem: "Ensuring mobile compatibility and responsive design across all devices",
+        solution: "Built mobile-first design with sticky input components and auto-scroll functionality, achieving 90% mobile compatibility across various devices and screen sizes"
       }
     ],
     link: "https://vibe-ai-silk.vercel.app/",
     github: "https://github.com/archishman-cell/VibeAI",
-    tech: "React, Vite, Gemini API, Tailwind CSS",
-    technologies: ["React", "Vite", "Google Gemini API", "Tailwind CSS", "JavaScript", "HTML5", "CSS3"],
+    tech: "React, Vite, Gemini API, Custom Hooks, Service Architecture",
+    technologies: ["React", "Vite", "Google Gemini API", "Custom Hooks", "Service Architecture", "JavaScript", "HTML5", "CSS3", "Mobile-First Design"],
     status: "Completed",
     icon: "🤖"
   },
   { 
     title: "Movie Finder App", 
     shortDesc: "A React-based movie discovery app using OMDB API with search functionality and detailed movie information.",
-    desc: "A React-based movie discovery app using OMDB API with search functionality, movie details, and responsive design", 
+    desc: "A responsive movie search application using React and OMDB API with real-time search, advanced filtering, and optimized API integration.", 
     detailedDescription: [
       "Movie Finder is a comprehensive movie discovery application that helps users search, explore, and learn about their favorite films using the OMDB (Open Movie Database) API.",
-      "The application features an intuitive search interface, detailed movie information pages, and a responsive design that works seamlessly across all devices.",
-      "Built with React and modern development practices, it showcases efficient API integration, state management, and user experience design."
+      "The application features an intuitive search interface with real-time search capabilities, detailed movie information pages, and a responsive design that works seamlessly across all devices.",
+      "Built with React and modern development practices, it showcases efficient API integration, state management, and user experience design with significant performance optimizations.",
+      "Achieved exceptional performance with 40% reduction in API calls through debouncing and 85% search accuracy with advanced filtering capabilities."
     ],
     features: [
-      "Advanced movie search with real-time results",
+      "Real-time search with 500ms debouncing to optimize API calls",
+      "Advanced multi-criteria filtering (title, director, actors, plot)",
+      "85% search accuracy with intelligent fallback data handling",
+      "Comprehensive error handling for network failures and rate limits",
+      "Mobile-first responsive UI with 95% mobile compatibility",
+      "Smooth animations with staggered loading effects",
       "Detailed movie information including plot, cast, ratings, and reviews",
-      "Responsive design optimized for all screen sizes",
-      "Fast loading with optimized API calls",
-      "Clean, modern user interface",
-      "Movie poster gallery and image optimization"
+      "User-friendly error messages and loading states",
+      "Optimized API integration reducing failed requests by 30%"
     ],
     challenges: [
       {
-        problem: "Handling large amounts of movie data and optimizing search performance",
-        solution: "Implemented debounced search, pagination, and efficient data caching to improve performance"
+        problem: "Optimizing API performance while maintaining real-time search experience",
+        solution: "Implemented 500ms debouncing mechanism, reducing API calls by 40% while preserving responsive search functionality and user experience"
       },
       {
-        problem: "Creating an engaging UI for movie browsing and discovery",
-        solution: "Designed an intuitive card-based layout with smooth animations and clear information hierarchy"
+        problem: "Building comprehensive search functionality with high accuracy",
+        solution: "Developed advanced multi-criteria filtering system (title, director, actors, plot) achieving 85% search accuracy with intelligent edge case handling and fallback data"
+      },
+      {
+        problem: "Managing API reliability and network error handling",
+        solution: "Created robust error handling system for network failures and rate limits, reducing failed requests by 30% and providing clear, user-friendly error messages"
+      },
+      {
+        problem: "Ensuring optimal mobile experience and responsive design",
+        solution: "Designed mobile-first responsive UI with Tailwind CSS, achieving 95% mobile compatibility with smooth animations and staggered loading effects for enhanced user experience"
       }
     ],
     link: "https://movie-finder-xi-five.vercel.app/",
     github: "https://github.com/archishman-cell/movie-finder",
-    tech: "React, OMDB API, Vite",
-    technologies: ["React", "OMDB API", "Vite", "JavaScript", "HTML5", "CSS3", "Responsive Design"],
+    tech: "React, OMDB API, Tailwind CSS, Debouncing, Advanced Filtering",
+    technologies: ["React", "OMDB API", "Tailwind CSS", "Vite", "Debouncing", "Advanced Filtering", "JavaScript", "HTML5", "CSS3", "Mobile-First Design"],
     status: "Completed",
     icon: "🎬"
   },

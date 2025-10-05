@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -6,13 +6,13 @@ export default function Hero() {
 
       {/* Main Content */}
       <div className="relative z-10 text-center">
-        <motion.h1 
+        <m.h1 
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-center leading-tight"
         >
-          Hi, I'm <motion.span 
+          Hi, I'm <m.span 
             className="text-blue-500 relative"
             animate={{
               textShadow: [
@@ -30,19 +30,19 @@ export default function Hero() {
             }}
           >
             Archishman Kar
-          </motion.span>
-        </motion.h1>
+          </m.span>
+        </m.h1>
         
-        <motion.p 
+        <m.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="mt-4 text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 text-center max-w-2xl px-4"
+          className="mt-4 text-base sm:text-lg md:text-xl text-gray-300 text-center max-w-2xl px-4"
         >
           Frontend Developer | React Specialist | Creative Problem Solver
-        </motion.p>
+        </m.p>
         
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5, duration: 1 }}
@@ -54,7 +54,7 @@ export default function Hero() {
           >
             ↓ Scroll Down
           </a>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

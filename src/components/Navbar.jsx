@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
-import ThemeToggler from "./ThemeToggler";
+
 
 export default function Navbar() {
   return (
-    <motion.nav 
+    <m.nav 
       className="fixed top-0 left-0 right-0 z-50 bg-transparent "
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -13,18 +13,18 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Left side - Social icons & Theme Toggler */}
-          <motion.div 
+          <m.div
             className="flex items-center space-x-2 sm:space-x-4"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             {/* GitHub Icon */}
-            <motion.a
+            <m.a
               href="https://github.com/archishman-cell"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 bg-black/10 dark:bg-white/10 backdrop-blur-md border border-black/20 dark:border-white/20 text-gray-800 dark:text-white font-medium rounded-full transition-all duration-300 text-sm hover:bg-black/20 dark:hover:bg-white/20 hover:border-black/30 dark:hover:border-white/30"
+              className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium rounded-full transition-all duration-300 text-sm hover:bg-white/20 hover:border-white/30"
               whileHover={{ 
                 scale: 1.05,
                 y: -2
@@ -33,14 +33,14 @@ export default function Navbar() {
             >
               <FaGithub className="w-4 h-4 mr-2" />
               GitHub
-            </motion.a>
+            </m.a>
 
             {/* LinkedIn Icon */}
-            <motion.a
+            <m.a
               href="https://www.linkedin.com/in/archishman-kar-15131336b"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 bg-black/10 dark:bg-white/10 backdrop-blur-md border border-black/20 dark:border-white/20 text-gray-800 dark:text-white font-medium rounded-full transition-all duration-300 text-sm hover:bg-black/20 dark:hover:bg-white/20 hover:border-black/30 dark:hover:border-white/30"
+              className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium rounded-full transition-all duration-300 text-sm hover:bg-white/20 hover:border-white/30"
               whileHover={{ 
                 scale: 1.05,
                 y: -2
@@ -49,24 +49,21 @@ export default function Navbar() {
             >
               <FaLinkedin className="w-4 h-4 mr-2" />
               LinkedIn
-            </motion.a>
-
-            {/* Theme Toggler */}
-            <ThemeToggler />
-          </motion.div>
+            </m.a>
+          </m.div>
 
           {/* Right side - Resume */}
-          <motion.div 
+          <m.div 
             className="flex items-center"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             {/* Resume Download Button */}
-            <motion.a 
+            <m.a 
               href="/resume.pdf" 
               download="Archishman_Kar_Resume.pdf"
-              className="inline-flex items-center px-4 py-2 bg-black/10 dark:bg-white/10 backdrop-blur-md border border-black/20 dark:border-white/20 text-gray-800 dark:text-white font-medium rounded-full transition-all duration-300 text-sm hover:bg-black/20 dark:hover:bg-white/20 hover:border-black/30 dark:hover:border-white/30"
+              className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium rounded-full transition-all duration-300 text-sm hover:bg-white/20 hover:border-white/30"
               whileHover={{ 
                 scale: 1.05,
                 y: -2
@@ -75,10 +72,10 @@ export default function Navbar() {
             >
               <FaDownload className="w-4 h-4 mr-2" />
               Resume
-            </motion.a>
-          </motion.div>
+            </m.a>
+          </m.div>
         </div>
       </div>
-    </motion.nav>
+    </m.nav>
   );
 }

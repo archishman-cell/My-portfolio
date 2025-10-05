@@ -1,11 +1,9 @@
 import { useCallback, useMemo } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
-import { useTheme } from "../context/ThemeContext";
+
 
 const ParticleBackground = () => {
-  const { theme } = useTheme();
-
   const particlesInit = useCallback(async (engine) => {
     // This loads the tsparticles package bundle, it's required for starting particles
     await loadSlim(engine);
@@ -14,7 +12,7 @@ const ParticleBackground = () => {
   const particleOptions = useMemo(() => ({
     background: {
       color: {
-        value: theme === 'dark' ? "#000000" : "#f0f0f0",
+        value: "#000000",
       },
     },
     fpsLimit: 60,
@@ -35,10 +33,10 @@ const ParticleBackground = () => {
     },
     particles: {
       color: {
-        value: theme === 'dark' ? "#ffffff" : "#000000",
+        value: "#ffffff",
       },
       links: {
-        color: theme === 'dark' ? "#ffffff" : "#000000",
+        color: "#ffffff",
         distance: 150,
         enable: true,
         opacity: 0.2,
@@ -72,7 +70,7 @@ const ParticleBackground = () => {
       },
     },
     detectRetina: true,
-  }), [theme]);
+  }), []);
 
   return (
     <Particles

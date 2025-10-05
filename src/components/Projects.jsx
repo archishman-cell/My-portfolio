@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
@@ -164,7 +164,7 @@ export default function Projects() {
     <section id="projects" className="relative py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 xl:px-20  overflow-hidden">
 
       <div className="relative z-10">
-      <motion.h2 
+      <m.h2 
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -172,13 +172,13 @@ export default function Projects() {
           className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-10 text-center"
       >
         Projects
-      </motion.h2>
+      </m.h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
         {projects.map((p, i) => (
-          <motion.div 
+          <m.div 
             key={i}
-              className="relative p-4 sm:p-6 rounded-lg hover:scale-105 transition-all duration-300 group overflow-hidden bg-gray-500/10 dark:bg-gray-900/40 backdrop-blur-md border border-gray-500/20 dark:border-gray-700 cursor-pointer hover:shadow-[0_0_15px_rgba(156,163,175,0.5)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:border-gray-500/40 dark:hover:border-white/20"
+              className="relative p-4 sm:p-6 rounded-lg hover:scale-105 transition-all duration-300 group overflow-hidden bg-gray-900/40 backdrop-blur-md border border-gray-700 cursor-pointer hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:border-white/20"
               initial={{ opacity: 0, y: 50, rotateY: -15 }}
               whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
             transition={{ delay: i * 0.3, duration: 0.8 }}
@@ -190,13 +190,13 @@ export default function Projects() {
               onClick={() => openModal(p)}
             >
               {/* Project Icon */}
-              <motion.div
+              <m.div
                 className="absolute top-4 right-4 text-2xl opacity-20 group-hover:opacity-40 transition-opacity duration-300"
               >
                 {p.icon}
-              </motion.div>
+              </m.div>
               
-              <motion.h3 
+              <m.h3 
                 className="text-xl sm:text-2xl font-semibold mb-3 pr-12"
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -204,37 +204,37 @@ export default function Projects() {
                 viewport={{ once: true }}
               >
                 {p.title}
-              </motion.h3>
+              </m.h3>
               
-              <motion.p 
-                className="text-gray-700 dark:text-gray-300 text-sm sm:text-base mb-4 leading-relaxed"
+              <m.p 
+                className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.3 + 0.4, duration: 0.6 }}
                 viewport={{ once: true }}
               >
                 {p.desc}
-              </motion.p>
+              </m.p>
 
               {p.title === "EdTech Music Learning Platform" && (
-                <div className="mb-4 p-3 rounded-md bg-yellow-100 border border-yellow-300 text-yellow-800 dark:bg-amber-400/10 dark:border-amber-400/30 dark:text-amber-300 text-xs sm:text-sm">
+                <div className="mb-4 p-3 rounded-md bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs sm:text-sm">
                   <strong>Note:</strong> This project is under development, can be routed through login button, this project may not be responsive for mobile devices
                 </div>
               )}
               
-              <motion.div 
+              <m.div 
                 className="mb-4"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ delay: i * 0.3 + 0.6, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <span className="text-xs sm:text-sm text-blue-800 bg-blue-100 dark:text-blue-300 dark:bg-blue-400/10 px-2 py-1 rounded-full">
+                <span className="text-xs sm:text-sm text-blue-300 bg-blue-400/10 px-2 py-1 rounded-full">
                   {p.tech}
                 </span>
-              </motion.div>
+              </m.div>
               
-              <motion.div
+              <m.div
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ delay: i * 0.3 + 0.8, duration: 0.5 }}
@@ -246,7 +246,7 @@ export default function Projects() {
                     e.stopPropagation();
                     openModal(p);
                   }}
-                  className="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 text-sm sm:text-base font-medium inline-flex items-center group-hover:translate-x-1 transition-all duration-300 hover:scale-105 cursor-pointer"
+                  className="text-green-400 hover:text-green-300 text-sm sm:text-base font-medium inline-flex items-center group-hover:translate-x-1 transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                   View Details →
                 </button>
@@ -255,14 +255,14 @@ export default function Projects() {
                   target={p.link && p.link.startsWith('http') ? '_blank' : '_self'}
                   rel={p.link && p.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                   onClick={(e) => e.stopPropagation()}
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 text-sm sm:text-base font-medium inline-flex items-center group-hover:translate-x-1 transition-all duration-300 hover:scale-105 cursor-pointer"
+                  className="text-blue-400 hover:text-blue-300 text-sm sm:text-base font-medium inline-flex items-center group-hover:translate-x-1 transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                   Live Demo →
                 </a>
-              </motion.div>
+              </m.div>
               
               {/* Hover Glow Effect removed to avoid per-card background animation */}
-          </motion.div>
+          </m.div>
         ))}
         </div>
       </div>

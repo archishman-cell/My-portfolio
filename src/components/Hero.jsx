@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 overflow-hidden text-white pt-16">
+    <section className="relative min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 overflow-hidden pt-16">
 
       {/* Main Content */}
       <div className="relative z-10 text-center">
@@ -37,7 +37,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="mt-4 text-base sm:text-lg md:text-xl text-gray-300 text-center max-w-2xl px-4"
+          className="mt-4 text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 text-center max-w-2xl px-4"
         >
           Frontend Developer | React Specialist | Creative Problem Solver
         </motion.p>

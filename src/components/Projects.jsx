@@ -178,7 +178,7 @@ export default function Projects() {
         {projects.map((p, i) => (
           <motion.div 
             key={i}
-              className="relative p-4 sm:p-6 rounded-lg hover:scale-105 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20 group overflow-hidden bg-white/10 backdrop-blur-md border border-white/10 hover:bg-white/15 hover:border-white/20 cursor-pointer"
+              className="relative p-4 sm:p-6 rounded-lg hover:scale-105 transition-all duration-300 group overflow-hidden bg-gray-500/10 dark:bg-gray-900/40 backdrop-blur-md border border-gray-500/20 dark:border-gray-700 cursor-pointer hover:shadow-[0_0_15px_rgba(156,163,175,0.5)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:border-gray-500/40 dark:hover:border-white/20"
               initial={{ opacity: 0, y: 50, rotateY: -15 }}
               whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
             transition={{ delay: i * 0.3, duration: 0.8 }}
@@ -207,7 +207,7 @@ export default function Projects() {
               </motion.h3>
               
               <motion.p 
-                className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed"
+                className="text-gray-700 dark:text-gray-300 text-sm sm:text-base mb-4 leading-relaxed"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.3 + 0.4, duration: 0.6 }}
@@ -217,8 +217,8 @@ export default function Projects() {
               </motion.p>
 
               {p.title === "EdTech Music Learning Platform" && (
-                <div className="mb-4 p-3 rounded-md bg-amber-400/10 border border-amber-400/30 text-amber-300 text-xs sm:text-sm">
-                  This project is under development, can be routed through login button, this project maynot be responsive for mobile devices
+                <div className="mb-4 p-3 rounded-md bg-yellow-100 border border-yellow-300 text-yellow-800 dark:bg-amber-400/10 dark:border-amber-400/30 dark:text-amber-300 text-xs sm:text-sm">
+                  <strong>Note:</strong> This project is under development, can be routed through login button, this project may not be responsive for mobile devices
                 </div>
               )}
               
@@ -229,7 +229,7 @@ export default function Projects() {
                 transition={{ delay: i * 0.3 + 0.6, duration: 0.5 }}
                 viewport={{ once: true }}
               >
-                <span className="text-xs sm:text-sm text-blue-400 bg-blue-400/10 px-2 py-1 rounded-full">
+                <span className="text-xs sm:text-sm text-blue-800 bg-blue-100 dark:text-blue-300 dark:bg-blue-400/10 px-2 py-1 rounded-full">
                   {p.tech}
                 </span>
               </motion.div>
@@ -246,7 +246,7 @@ export default function Projects() {
                     e.stopPropagation();
                     openModal(p);
                   }}
-                  className="text-green-400 hover:text-green-300 text-sm sm:text-base font-medium inline-flex items-center group-hover:translate-x-1 transition-all duration-300 hover:scale-105 cursor-pointer"
+                  className="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 text-sm sm:text-base font-medium inline-flex items-center group-hover:translate-x-1 transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                   View Details →
                 </button>
@@ -255,7 +255,7 @@ export default function Projects() {
                   target={p.link && p.link.startsWith('http') ? '_blank' : '_self'}
                   rel={p.link && p.link.startsWith('http') ? 'noopener noreferrer' : undefined}
                   onClick={(e) => e.stopPropagation()}
-                  className="text-blue-400 hover:text-blue-300 text-sm sm:text-base font-medium inline-flex items-center group-hover:translate-x-1 transition-all duration-300 hover:scale-105 cursor-pointer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 text-sm sm:text-base font-medium inline-flex items-center group-hover:translate-x-1 transition-all duration-300 hover:scale-105 cursor-pointer"
                 >
                   Live Demo →
                 </a>
